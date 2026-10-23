@@ -35,27 +35,12 @@
 
 
     <nav class="menu">
-
-        <a href="index.html">
-            Início
-        </a>
-
-        <a href="Produtos.html">
-            Produtos
-        </a>
-
-        <a href="atacado.html">
-            Atacado
-        </a>
-
-        <a href="sobre.html">
-            Sobre nós
-        </a>
-
-        <a href="contato.html">
-            Contato
-        </a>
-
+        <a href="index.html">Início</a>
+        <a href="Produtos.html">Produtos</a>
+        <a href="evento.html" aria-current="page">Eventos</a>
+        <a href="atacado.html">Atacado</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
     </nav>
 
 
@@ -332,11 +317,16 @@
 
 </main>
 
+<!-- =========================================
+     RODAPÉ
+========================================= -->
+
 <footer class="rodape">
 
     <!-- NEWSLETTER -->
     <div class="newsletter">
 
+        <!-- TEXTO -->
         <div class="newsletter-texto">
             <p>
                 Fique por dentro das nossas novidades e
@@ -344,27 +334,38 @@
             </p>
         </div>
 
+        <!-- FORMULÁRIO -->
         <div class="newsletter-form">
 
             <label for="newsletter-email">E-mail</label>
 
-            <input
-                    type="email"
-                    id="newsletter-email"
-                    name="newsletter-email"
-                    placeholder="Digite seu e-mail"
-            >
+            <div class="newsletter-campo">
+                <input
+                        type="email"
+                        id="newsletter-email"
+                        name="newsletter-email"
+                        placeholder="Digite seu e-mail"
+                >
 
-            <button type="button">
-                ➤
-            </button>
+                <button type="button" aria-label="Enviar e-mail">
+                    ➤
+                </button>
+            </div>
+
         </div>
 
+        <!-- INSTAGRAM -->
         <div class="redes-sociais">
             <span>SIGA-NOS</span>
 
-            <a href="#" aria-label="Instagram">
-                ◎
+            <a href="https://www.instagram.com/vela.vibe_/"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="Instagram Vela Vibe">
+
+                Instagram
+                <img src="img/instagram.png" alt="Instagram Vela Vibe">
+
             </a>
         </div>
 
@@ -372,15 +373,15 @@
 
 
     <!-- INFORMAÇÕES -->
+
     <div class="rodape-conteudo">
 
         <!-- LOGO -->
+
         <div class="rodape-coluna logo-rodape">
 
-            <img
-                    src="img/logo.jpg"
-                    alt="Vela Vibe"
-            >
+            <img src="img/Logo.jpeg"
+                 alt="Vela Vibe">
 
             <p>
                 © 2026 Vela Vibe
@@ -390,6 +391,7 @@
 
 
         <!-- SOBRE -->
+
         <div class="rodape-coluna">
 
             <p>
@@ -400,7 +402,7 @@
             </p>
 
             <p>
-                ☎ (11) 91959-4341
+                ☎ +55 11 91959-4341
             </p>
 
             <p>
@@ -411,6 +413,7 @@
 
 
         <!-- PRODUTOS -->
+
         <div class="rodape-coluna">
 
             <h3>PRODUTOS</h3>
@@ -431,6 +434,7 @@
 
 
         <!-- ACESSO RÁPIDO -->
+
         <div class="rodape-coluna">
 
             <h3>ACESSO RÁPIDO</h3>
@@ -447,10 +451,15 @@
                 Meu carrinho
             </a>
 
+            <a href="Acompanhe.html">
+                Acompanhar entrega
+            </a>
+
         </div>
 
 
         <!-- POLÍTICAS -->
+
         <div class="rodape-coluna">
 
             <h3>POLÍTICAS</h3>
@@ -473,6 +482,7 @@
 
 
     <!-- COPYRIGHT -->
+
     <div class="rodape-final">
 
         <span>
@@ -491,5 +501,4 @@
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
