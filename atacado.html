@@ -1,358 +1,275 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+  <html lang="pt-BR">
 
-<head>
+  <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Atacado - Vela Vibe</title>
+    <title>Produtos | Vela Vibe</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-</head>
+  </head>
 
 
-<body>
+  <body>
 
 
-<header class="cabecalho">
+  <header class="cabecalho">
 
     <div class="logo">
-
-        <img src="img/logo.jpg"
-             alt="Logo Vela Vibe">
-
+      <img src="img/logo.jpg" alt="Logo Vela Vibe">
     </div>
 
 
     <nav class="menu">
-
-        <a href="index.html">
-            Início
-        </a>
-
-        <a href="Produtos.html">
-            Produtos
-        </a>
-
-        <a href="atacado.html">
-            Atacado
-        </a>
-
-        <a href="sobre.html">
-            Sobre nós
-        </a>
-
-        <a href="contato.html">
-            Contato
-        </a>
-
+      <a href="index.html">Início</a>
+      <a href="Produtos.html">Produtos</a>
+      <a href="evento.html" aria-current="page">Eventos</a>
+      <a href="atacado.html">Atacado</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
     </nav>
 
+    <a href="CrieSuaVela.html" class="criar-vela" title="Crie sua vela">
+      <img src="img/criarsuavela.jpg" alt="Crie sua vela">
+    </a>
 
-    <div class="acoes-cabecalho">
+    <a href="Acompanhe.html" class="acompanhar-entrega" title="Acompanhar entrega">
+      <img src="img/icone2.jpg" alt="Acompanhar entrega">
+    </a>
 
-        <a href="CrieSuaVela.html"
-           class="criar-vela"
-           title="Crie sua vela">
+    <a href="Carrinho.html" class="carrinho">
+      <img src="img/carrinho.jpg" alt="Carrinho">
+    </a>
 
-            <img src="img/criarsuavela.jpg"
-                 alt="Crie sua vela">
-
-        </a>
-
-        <a href="Acompanhe.html" class="acompanhar-entrega" title="Acompanhar entrega">
-            <img src="img/icone2.jpg" alt="Acompanhar entrega">
-        </a>
-
-        <a href="Carrinho.html"
-           class="carrinho"
-           title="Carrinho">
-
-            <img src="img/carrinho.jpg"
-                 alt="Carrinho">
-
-        </a>
-
-    </div>
-
-</header>
+  </header>
 
 
 
-<main class="atacado-conteudo">
+  <main>
 
 
-    <section class="atacado">
+    <section class="pagina-produtos">
 
+      <div class="titulo-secao">
 
-        <h1>
-            Vela Vibe no atacado
-        </h1>
+        <p>NOSSA COLEÇÃO</p>
 
+        <h1>Velas artesanais</h1>
 
-        <p class="atacado-intro">
+        <span>
+                Encontre o aroma perfeito para o seu momento.
+            </span>
 
-            Quer comprar as nossas velas em maior quantidade?
-
-            Faça uma solicitação de orçamento para pedidos
-            no atacado.
-
-        </p>
+      </div>
 
 
 
-        <div class="atacado-info">
+      <div class="produtos-grid">
 
+        <!-- PRODUTO 1 -->
 
-            <h2>
-                Como funciona?
-            </h2>
+        <div class="produto">
 
+          <div class="produto-imagem">
+            <img src="img/baunilha.jpg" alt="Vela de Baunilha">
+          </div>
 
-            <p>
+          <h3>Vela de Baunilha</h3>
 
-                Trabalhamos com pedidos em quantidade para lojas,
-                eventos, empresas e outras ocasiões especiais.
+          <p>R$ 29,90</p>
 
-            </p>
+          <a href="Compra.html?produto=baunilha" class="botao-compra">
 
+            <button type="button"
+                    class="Ver produto"
+                    id="Ver-produto"
+                    >
 
-            <p>
+              Ver produto
 
-                Preencha o formulário abaixo com os seus dados e
-                conte para nós quais produtos e quantidades
-                você deseja.
+            </button>
 
-            </p>
-
+          </a>
 
         </div>
 
 
+        <!-- PRODUTO 2 -->
 
-        <form
+        <div class="produto">
 
-                id="formulario-atacado"
+          <div class="produto-imagem">
+            <img src="img/lavanda.jpg" alt="Vela de Lavanda">
+          </div>
 
-                class="formulario-atacado"
+          <h3>Vela de Lavanda</h3>
 
-                action="https://formspree.io/f/xwlknddr"
+          <p>R$ 34,90</p>
 
-                method="POST"
+          <a href="Compra.html?produto=lavanda" class="botao-compra">
 
-        >
-
-
-            <input
-
-                    type="hidden"
-
-                    name="subject"
-
-                    value="Nova solicitação de orçamento - Vela Vibe"
-
+            <button type="button"
+                    class="Ver produto"
             >
 
-
-
-            <h2>
-                Solicite o seu orçamento
-            </h2>
-
-
-
-            <div class="campo-atacado">
-
-
-                <label for="nome-atacado">
-                    Nome
-                </label>
-
-
-                <input
-
-                        type="text"
-
-                        id="nome-atacado"
-
-                        name="nome"
-
-                        placeholder="Digite seu nome"
-
-                        required
-
-                >
-
-
-            </div>
-
-
-
-            <div class="campo-atacado">
-
-
-                <label for="email-atacado">
-                    E-mail
-                </label>
-
-
-                <input
-
-                        type="email"
-
-                        id="email-atacado"
-
-                        name="email"
-
-                        placeholder="Digite seu e-mail"
-
-                        required
-
-                >
-
-
-            </div>
-
-
-
-            <div class="campo-atacado">
-
-
-                <label for="empresa-atacado">
-                    Empresa ou loja
-                </label>
-
-
-                <input
-
-                        type="text"
-
-                        id="empresa-atacado"
-
-                        name="empresa"
-
-                        placeholder="Nome da empresa ou loja"
-
-                >
-
-
-            </div>
-
-
-
-            <div class="campo-atacado">
-
-
-                <label for="quantidade-atacado">
-                    Quantidade aproximada
-                </label>
-
-
-                <input
-
-                        type="number"
-
-                        id="quantidade-atacado"
-
-                        name="quantidade"
-
-                        min="1"
-
-                        placeholder="Ex: 50"
-
-                        required
-
-                >
-
-
-            </div>
-
-
-
-            <div class="campo-atacado">
-
-
-                <label for="mensagem-atacado">
-                    Quais produtos você deseja?
-                </label>
-
-
-                <textarea
-
-                        id="mensagem-atacado"
-
-                        name="mensagem"
-
-                        rows="6"
-
-                        placeholder="Ex: 20 velas de baunilha, 15 de lavanda..."
-
-                        required
-
-                ></textarea>
-
-
-            </div>
-
-
-
-            <button
-
-                    type="submit"
-
-                    id="enviar-atacado"
-
-                    class="botao-atacado"
-
-            >
-
-                Solicitar orçamento
+              Ver produto
 
             </button>
+          </a>
+
+        </div>
 
 
-        </form>
+        <!-- PRODUTO 3 -->
 
+        <div class="produto">
+
+          <div class="produto-imagem">
+            <img src="img/rosas.jpg" alt="Vela de Rosas">
+          </div>
+
+          <h3>Vela de Rosas</h3>
+
+          <p>R$ 32,90</p>
+
+          <a href="Compra.html?produto=rosas" class="botao-compra">
+            <button type="button"
+
+            >
+              Ver produto
+
+            </button>
+          </a>
+
+        </div>
+
+
+        <!-- PRODUTO 4 -->
+
+        <div class="produto">
+
+          <div class="produto-imagem">
+            <img src="img/canela.jpg" alt="Vela de Canela">
+          </div>
+
+          <h3>Vela de Canela</h3>
+
+          <p>R$ 31,90</p>
+
+          <a href="Compra.html?produto=canela" class="botao-compra">
+            <button type="button"
+                    class="Ver produto"
+            >
+
+              Ver produto
+
+            </button>
+          </a>
+
+        </div>
+
+
+        <!-- PRODUTO 5 -->
+
+        <div class="produto">
+
+          <div class="produto-imagem">
+            <img src="img/coco.jpg" alt="Vela de Coco">
+          </div>
+
+          <h3>Vela de Coco</h3>
+
+          <p>R$ 36,90</p>
+
+          <a href="Compra.html?produto=coco" class="botao-compra">
+            <button type="button"
+                    class="Ver produto"
+            >
+
+              Ver produto
+
+            </button>
+          </a>
+
+        </div>
+
+
+        <!-- PRODUTO 6 -->
+
+        <div class="produto">
+
+          <div class="produto-imagem">
+            <img src="img/jasmim.jpg" alt="Vela de Jasmim">
+          </div>
+
+          <h3>Vela de Jasmim</h3>
+
+          <p>R$ 33,90</p>
+
+          <a href="Compra.html?produto=jasmim" class="botao-compra">
+            <button type="button"
+                    class="Ver produto"
+                    id="Ver produto"
+            >
+
+              Ver produto
+
+            </button>
+          </a>
+
+        </div>
+
+      </div>
 
     </section>
 
+  </main>
 
-</main>
-
-<footer class="rodape">
+  <footer class="rodape">
 
     <!-- NEWSLETTER -->
     <div class="newsletter">
 
-        <div class="newsletter-texto">
-            <p>
-                Fique por dentro das nossas novidades e
-                promoções exclusivas.
-            </p>
-        </div>
+      <div class="newsletter-texto">
+        <p>
+          Fique por dentro das nossas novidades e
+          promoções exclusivas.
+        </p>
+      </div>
 
-        <div class="newsletter-form">
+      <div class="newsletter-form">
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 
-            <button type="button">
-                ➤
-            </button>
-        </div>
+        <button type="button">
+          ➤
+        </button>
+      </div>
 
-        <div class="redes-sociais">
-            <span>SIGA-NOS</span>
+      <div class="redes-sociais">
+        <span>SIGA-NOS</span>
 
-            <a href="#" aria-label="Instagram">
-                ◎
-            </a>
-        </div>
+        <a href="https://www.instagram.com/vela.vibe_/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Instagram
+        </a>
+
+        <a href="https://www.instagram.com/vela.vibe_?stkn=bjBoemRpM3N4aGls"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Instagram Vela Vibe">
+
+          <img src="img/instagram.png" alt="Instagram Vela Vibe">
+
+        </a>
+
+      </div>
 
     </div>
 
@@ -360,100 +277,100 @@
     <!-- INFORMAÇÕES -->
     <div class="rodape-conteudo">
 
-        <!-- LOGO -->
-        <div class="rodape-coluna logo-rodape">
+      <!-- LOGO -->
+      <div class="rodape-coluna logo-rodape">
 
-            <img
-                    src="img/logo.jpg"
-                    alt="Vela Vibe"
-            >
+        <img
+                src="img/Logo.jpeg"
+                alt="Vela Vibe"
+        >
 
-            <p>
-                © 2026 Vela Vibe
-            </p>
+        <p>
+          © 2026 Vela Vibe
+        </p>
 
-        </div>
-
-
-        <!-- SOBRE -->
-        <div class="rodape-coluna">
-
-            <p>
-                Oferecemos velas de alta qualidade,
-                feitas com ceras naturais e fragrâncias
-                cuidadosamente escolhidas para uma
-                experiência única.
-            </p>
-
-            <p>
-                ☎ (11) 91959-4341
-            </p>
-
-            <p>
-                ✉ velavibe2026@gmail.com
-            </p>
-
-        </div>
+      </div>
 
 
-        <!-- PRODUTOS -->
-        <div class="rodape-coluna">
+      <!-- SOBRE -->
+      <div class="rodape-coluna">
 
-            <h3>PRODUTOS</h3>
+        <p>
+          Oferecemos velas de alta qualidade,
+          feitas com ceras naturais e fragrâncias
+          cuidadosamente escolhidas para uma
+          experiência única.
+        </p>
 
-            <a href="Produtos.html">
-                Nosso catálogo
-            </a>
+        <p>
+          ☎ (11) 91959-4341
+        </p>
 
-            <a href="CrieSuaVela.html">
-                Crie sua vela
-            </a>
+        <p>
+          ✉ velavibe2026@gmail.com
+        </p>
 
-            <a href="atacado.html">
-                Atacado
-            </a>
-
-        </div>
-
-
-        <!-- ACESSO RÁPIDO -->
-        <div class="rodape-coluna">
-
-            <h3>ACESSO RÁPIDO</h3>
-
-            <a href="sobre.html">
-                Sobre nós
-            </a>
-
-            <a href="contato.html">
-                Contato
-            </a>
-
-            <a href="Carrinho.html">
-                Meu carrinho
-            </a>
-
-        </div>
+      </div>
 
 
-        <!-- POLÍTICAS -->
-        <div class="rodape-coluna">
+      <!-- PRODUTOS -->
+      <div class="rodape-coluna">
 
-            <h3>POLÍTICAS</h3>
+        <h3>PRODUTOS</h3>
 
-            <a href="#">
-                Perguntas frequentes
-            </a>
+        <a href="Produtos.html">
+          Nosso catálogo
+        </a>
 
-            <a href="#">
-                Política de privacidade
-            </a>
+        <a href="CrieSuaVela.html">
+          Crie sua vela
+        </a>
 
-            <a href="#">
-                Termos de uso
-            </a>
+        <a href="atacado.html">
+          Atacado
+        </a>
 
-        </div>
+      </div>
+
+
+      <!-- ACESSO RÁPIDO -->
+      <div class="rodape-coluna">
+
+        <h3>ACESSO RÁPIDO</h3>
+
+        <a href="sobre.html">
+          Sobre nós
+        </a>
+
+        <a href="contato.html">
+          Contato
+        </a>
+
+        <a href="Carrinho.html">
+          Meu carrinho
+        </a>
+
+      </div>
+
+
+      <!-- POLÍTICAS -->
+      <div class="rodape-coluna">
+
+        <h3>POLÍTICAS</h3>
+
+        <a href="#">
+          Perguntas frequentes
+        </a>
+
+        <a href="#">
+          Política de privacidade
+        </a>
+
+        <a href="#">
+          Termos de uso
+        </a>
+
+      </div>
 
     </div>
 
@@ -465,18 +382,16 @@
             © 2026 Vela Vibe
         </span>
 
-        <span>
+      <span>
             Todos os direitos reservados.
         </span>
 
     </div>
 
-</footer>
+  </footer>
 
+  <script src="js/script.js"></script>
 
-<script src="js/script.js"></script>
-
-
-</body>
+  </body>
 
 </html>
