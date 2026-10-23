@@ -2714,6 +2714,10 @@ body {
     height: auto;
 
     object-fit: contain;
+
+    .redes-sociais a img {
+        border-radius: 50%;
+    }
 }
 
 .logo-rodape p {
@@ -2726,6 +2730,323 @@ body {
 
 
 /* PARTE FINAL */
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.rodape {
+    background-color: #f7f5f2;
+
+    color: var(--preto);
+
+    margin-top: 60px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter {
+    min-height: 120px;
+
+    padding: 35px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr auto auto;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background-color: #f8eee5;
+
+    border-top: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* TEXTO */
+
+.newsletter-texto {
+    max-width: 320px;
+}
+
+.newsletter-texto p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.newsletter-form {
+    display: flex;
+
+    align-items: center;
+
+    height: 48px;
+
+    width: auto;
+
+    flex-shrink: 0;
+}
+
+
+/* E-MAIL */
+
+.newsletter-form label {
+    margin-right: 12px;
+
+    white-space: nowrap;
+
+    font-size: 16px;
+}
+
+
+/* CAMPO */
+
+.newsletter-form input {
+    width: 295px;
+
+    height: 48px;
+
+    box-sizing: border-box;
+
+    padding: 0 16px;
+
+    border: 1px solid var(--preto);
+
+    border-right: none;
+
+    border-radius: 7px 0 0 7px;
+
+    background-color: white;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+/* BOTÃO */
+
+.newsletter-form button {
+    width: 70px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border: 1px solid var(--preto);
+
+    border-radius: 0 7px 7px 0;
+
+    background-color: var(--terracota);
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--dourado);
+
+    color: var(--preto);
+}
+
+
+/* =========================================
+   REDES SOCIAIS
+========================================= */
+
+.redes-sociais {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    white-space: nowrap;
+}
+
+.redes-sociais span {
+    margin-right: 10px;
+
+    font-size: 16px;
+}
+
+
+/* INSTAGRAM */
+
+.redes-sociais a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--preto);
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    border: none;
+
+    background: none;
+}
+
+
+/* ÍCONE DO INSTAGRAM */
+
+.redes-sociais a img {
+    width: 38px;
+
+    height: 38px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    border: none;
+
+    outline: none;
+}
+
+.redes-sociais a:hover {
+    color: var(--terracota);
+}
+
+.redes-sociais a img:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   CONTEÚDO DO RODAPÉ
+========================================= */
+
+.rodape-conteudo {
+    padding: 45px 6%;
+
+    display: grid;
+
+    /*
+       LOGO
+       DESCRIÇÃO
+       PRODUTOS
+       ACESSO RÁPIDO
+       POLÍTICAS
+    */
+
+    grid-template-columns:
+        150px
+        minmax(250px, 1.6fr)
+        1fr
+        1fr
+        1fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+/* COLUNAS */
+
+.rodape-coluna {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* TÍTULOS */
+
+.rodape-coluna h3 {
+    margin: 0 0 12px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* TEXTOS */
+
+.rodape-coluna p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* LINKS */
+
+.rodape-coluna a {
+    color: var(--preto);
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.rodape-coluna a:hover {
+    color: var(--terracota);
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGO DO RODAPÉ
+========================================= */
+
+.logo-rodape img {
+    width: 120px !important;
+
+    height: 120px !important;
+
+    object-fit: cover;
+
+    border-radius: 50% !important;
+
+    display: block;
+}
+
+.logo-rodape p {
+    margin-top: 10px;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* =========================================
+   PARTE FINAL
+========================================= */
 
 .rodape-final {
     padding: 20px 6%;
@@ -2740,7 +3061,7 @@ body {
 
     gap: 10px;
 
-    font-size: 12px;
+    font-size: 11px;
 
     color: #777;
 }
@@ -2749,52 +3070,230 @@ body {
     color: var(--terracota);
 }
 
-
 /* =========================================
    RESPONSIVIDADE
 ========================================= */
 
+@media (max-width: 1000px) {
 
-/* TABLET */
+    /* NEWSLETTER: TUDO NA MESMA LINHA */
 
-@media (max-width: 900px) {
+    .newsletter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
 
-    .menu {
+        width: 100%;
+        padding: 30px 6%;
+        box-sizing: border-box;
+    }
+
+    /* TEXTO */
+
+    .newsletter-texto {
+        flex: 1 1 250px;
+        min-width: 180px;
+        max-width: 320px;
+    }
+
+    .newsletter-texto p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* FORMULÁRIO */
+
+    .newsletter-form {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .newsletter-form label {
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .newsletter-campo {
+        display: flex;
+        align-items: stretch;
+        width: 365px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .newsletter-campo input {
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 16px;
+
+        border: 1px solid var(--preto);
+        border-right: none;
+        border-radius: 7px 0 0 7px;
+        background: white;
+        font-size: 14px;
+    }
+
+    .newsletter-campo button {
+        width: 70px;
+        height: 100%;
+        flex-shrink: 0;
+
+        border: 1px solid var(--preto);
+        border-radius: 0 7px 7px 0;
+
+        background-color: var(--terracota);
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    /* INSTAGRAM */
+
+    /* REDES SOCIAIS */
+
+    .redes-sociais {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .redes-sociais span {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .redes-sociais a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .redes-sociais a img {
+        width: 38px;
+        height: 38px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+    }
+    /* TELAS MENORES */
+
+    @media (max-width: 1050px) {
+        .newsletter {
+            gap: 20px;
+        }
+
+        .newsletter-texto {
+            flex-basis: 180px;
+        }
+
+        .newsletter-campo {
+            width: 280px;
+        }
+
+        .redes-sociais {
+            gap: 8px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .newsletter {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 25px;
+        }
+
+        .newsletter-texto {
+            flex: 1 1 100%;
+            max-width: none;
+        }
+
+        .newsletter-form {
+            flex-wrap: wrap;
+        }
+
+        .newsletter-campo {
+            width: min(365px, 65vw);
+        }
+    }
+    /* INSTAGRAM */
+
+    .redes-sociais {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         gap: 15px;
+
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin: 0;
     }
 
-    .hero {
-        flex-direction: column;
-
-        text-align: center;
-
-        padding: 60px 6%;
+    .redes-sociais span {
+        margin: 0;
     }
 
-    .hero h1 {
-        font-size: 44px;
+    .redes-sociais a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        color: var(--preto);
+        text-decoration: none;
     }
 
-    .produtos-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .redes-sociais a img {
+        width: 38px;
+        height: 38px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
     }
 
-    .tamanhos-velas {
-        grid-template-columns: 1fr;
+    .redes-sociais {
+        margin-left: 0;
     }
+
 
     .rodape-conteudo {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            120px
+            1.5fr
+            1fr
+            1fr
+            1fr;
+
+        gap: 25px;
+    }
+
+
+    /* MANTÉM 3 VELAS */
+
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
     }
 
 }
 
 
-/* MOBILE */
+/* TABLET / CELULAR */
 
 @media (max-width: 800px) {
-
-    /* CABEÇALHO */
 
     .cabecalho {
         padding: 15px 5%;
@@ -2817,230 +3316,26 @@ body {
     }
 
 
-    /* COMPRA */
-
-    .produto-detalhe {
-        flex-direction: column;
-
-        gap: 40px;
-
-        text-align: center;
-    }
-
-    .produto-imagem-grande {
-        width: 100%;
-
-        max-width: 420px;
-
-        height: 300px;
-    }
-
-    .produto-imagem-grande img {
-        height: 250px;
-    }
-
-    .produto-informacoes h1 {
-        font-size: 32px;
-    }
-
-    .quantidade {
-        justify-content: center;
-    }
-
-
-    /* SOBRE */
-
-    .sobre-secao,
-    .sobre-secao-invertida {
-        flex-direction: column;
-
-        padding: 50px 25px;
-
-        gap: 30px;
-    }
-
-    .sobre-imagem {
-        width: 100%;
-
-        max-width: 380px;
-
-        height: 240px;
-    }
-
-    .sobre-texto {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .sobre-texto h1 {
-        font-size: 34px;
-    }
-
-    .sobre-texto h2 {
-        font-size: 28px;
-    }
-
-
-    /* IDEIAS */
-
-    .ideias-criacoes {
-        padding: 60px 6%;
-    }
-
-    .titulo-ideias h2 {
-        font-size: 38px;
-    }
-
-    .ideia-bloco,
-    .ideia-invertido {
-        flex-direction: column;
-
-        min-height: auto;
-
-        gap: 30px;
-
-        margin-bottom: 60px;
-    }
-
-    .ideia-imagem {
-        width: 100%;
-
-        max-width: 500px;
-
-        height: 250px;
-    }
-
-    .ideia-texto {
-        width: 100%;
-
-        text-align: center;
-    }
-
-
-    /* QUIZ */
-
-    .quiz-vibe {
-        padding: 60px 5%;
-    }
-
-    .quiz-introducao h2 {
-        font-size: 30px;
-    }
-
-    .quiz-container,
-    .quiz-resultado {
-        padding: 25px;
-    }
-
-    .quiz-opcoes {
-        grid-template-columns: 1fr;
-    }
-
-    .resultado-imagem {
-        width: 220px;
-
-        height: 220px;
-    }
-
-
-    /* ACOMPANHAR */
-
-    .acompanhar-pagina {
-        padding: 40px 5%;
-    }
-
-    .acompanhar-introducao h1 {
-        font-size: 32px;
-    }
-
-    .consulta-pedido {
-        padding: 25px;
-    }
-
-    .campo-pedido {
-        flex-direction: column;
-    }
-
-    .informacoes-pedido {
-        padding: 25px;
-    }
-
-    .pedido-cabecalho {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-    .status-pedido {
-        text-align: left;
-    }
-
-    .produto-pedido {
-        align-items: flex-start;
-    }
-
-    .rastreamento {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 0;
-    }
-
-    .etapa {
-        flex-direction: row;
-
-        width: 100%;
-
-        gap: 15px;
-
-        text-align: left;
-    }
-
-    .etapa span {
-        margin-top: 0;
-    }
-
-    .linha {
-        width: 4px;
-
-        height: 35px;
-
-        flex: none;
-
-        margin: 0 0 0 19px;
-    }
-
-
-    /* CRIE SUA VELA */
-
-    .aromas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cores-vela {
+    .produtos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    /* FINALIZAÇÃO */
-
-    .finalizar-area {
-        grid-template-columns: 1fr;
+    .rodape-conteudo {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    /* RODAPÉ */
-
-    .newsletter {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
 
     .newsletter-form {
         width: 100%;
+    }
+
+    .newsletter-form input {
+        flex: 1;
+
+        width: auto;
+
+        min-width: 0;
     }
 
 }
@@ -3054,9 +3349,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+
     .rodape-conteudo {
         grid-template-columns: 1fr;
     }
+
 
     .rodape-final {
         flex-direction: column;
@@ -3064,22 +3361,618 @@ body {
         align-items: flex-start;
     }
 
-    .aromas {
-        grid-template-columns: 1fr;
-    }
 
-    .cores-vela {
-        grid-template-columns: 1fr;
-    }
-
-    .botoes-sucesso {
-        flex-direction: column;
-    }
-
-    .botoes-sucesso a {
+    .newsletter-form {
         width: 100%;
+    }
 
+    .newsletter-form label {
+        margin-right: 8px;
+    }
+
+
+    .redes-sociais {
+        gap: 15px;
+    }
+
+}
+/* CORREÇÃO DEFINITIVA DO ESPAÇAMENTO */
+
+.newsletter .redes-sociais {
+    display: flex !important;
+    align-items: center;
+    gap: 20px !important;
+}
+
+.newsletter .redes-sociais > span {
+    margin-right: 15px !important;
+    flex-shrink: 0;
+}
+
+.newsletter .redes-sociais > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px !important;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.newsletter .redes-sociais img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* =========================================
+   PÁGINA DE EVENTOS - VELA VIBE
+========================================= */
+
+.pagina-eventos {
+    color: var(--preto);
+    background-color: #fffdf9;
+}
+
+/* ELEMENTOS GERAIS */
+
+.eventos-etiqueta {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--terracota);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.pagina-eventos h1,
+.pagina-eventos h2,
+.pagina-eventos h3,
+.pagina-eventos p {
+    margin-top: 0;
+}
+
+.pagina-eventos h1,
+.pagina-eventos h2,
+.pagina-eventos h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+}
+
+.eventos-botao {
+    display: inline-block;
+    padding: 14px 27px;
+    border: 1px solid var(--terracota);
+    border-radius: 30px;
+    background-color: var(--terracota);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s,
+    transform 0.25s;
+}
+
+.eventos-botao:hover {
+    background-color: var(--dourado);
+    border-color: var(--dourado);
+    color: var(--preto);
+    transform: translateY(-2px);
+}
+
+
+/* ABERTURA */
+
+.eventos-hero {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 75px 6%;
+}
+
+.eventos-hero-texto h1 {
+    max-width: 600px;
+    margin-bottom: 24px;
+    color: var(--preto);
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.12;
+}
+
+.eventos-hero-texto p {
+    max-width: 520px;
+    margin-bottom: 28px;
+    color: #5d5149;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.eventos-link {
+    display: inline-block;
+    margin-left: 18px;
+    color: var(--terracota);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.eventos-link:hover {
+    text-decoration: underline;
+}
+
+.eventos-hero-imagem {
+    height: 490px;
+    overflow: hidden;
+    border-radius: 180px 180px 12px 12px;
+    background-color: var(--creme);
+}
+
+.eventos-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* INTRODUÇÃO */
+
+.eventos-introducao {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 65px 25px 50px;
+    text-align: center;
+}
+
+.eventos-introducao h2 {
+    margin-bottom: 18px;
+    color: var(--terracota);
+    font-size: clamp(30px, 4vw, 43px);
+}
+
+.eventos-introducao p {
+    margin-bottom: 0;
+    color: #65584e;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* CARTÕES DAS CATEGORIAS */
+
+.eventos-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 6% 90px;
+}
+
+.evento-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e9ded2;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 25px rgba(48, 31, 20, 0.05);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.evento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(48, 31, 20, 0.10);
+}
+
+.evento-card-imagem {
+    height: 245px;
+    overflow: hidden;
+    background-color: var(--creme);
+}
+
+.evento-card-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.evento-card:hover .evento-card-imagem img {
+    transform: scale(1.04);
+}
+
+.evento-card-conteudo {
+    padding: 26px 25px 30px;
+}
+
+.evento-numero {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--dourado);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.evento-card-conteudo h3 {
+    margin-bottom: 13px;
+    color: var(--terracota);
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.evento-card-conteudo p {
+    min-height: 95px;
+    margin-bottom: 22px;
+    color: #65584e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.evento-card-conteudo a {
+    color: var(--terracota);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.evento-card-conteudo a:hover {
+    color: #7f4228;
+    text-decoration: underline;
+}
+
+
+/* DIFERENCIAIS */
+
+.eventos-diferenciais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+
+    padding: 75px 10%;
+    background-color: var(--creme);
+}
+
+.eventos-diferenciais h2 {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: var(--terracota);
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.2;
+}
+
+.eventos-diferenciais > div:first-child > p {
+    max-width: 480px;
+    margin-bottom: 0;
+    color: #65584e;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.eventos-diferenciais-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.eventos-diferenciais-lista > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #ddcbb8;
+}
+
+.eventos-diferenciais-lista > div:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.eventos-diferenciais-lista > div > span {
+    color: var(--terracota);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+}
+
+.eventos-diferenciais-lista p {
+    margin-bottom: 0;
+    color: #65584e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.eventos-diferenciais-lista strong {
+    color: var(--preto);
+    font-size: 16px;
+}
+
+
+/* ORÇAMENTO */
+
+.eventos-orcamento {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 65px;
+
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 100px 6%;
+}
+
+.eventos-orcamento-intro h2 {
+    margin-bottom: 20px;
+    color: var(--terracota);
+    font-size: clamp(34px, 4vw, 46px);
+    line-height: 1.2;
+}
+
+.eventos-orcamento-intro > p {
+    margin-bottom: 25px;
+    color: #65584e;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.eventos-whatsapp {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid #477b50;
+    border-radius: 30px;
+    color: #35663e;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.eventos-whatsapp:hover {
+    background-color: #477b50;
+    color: #ffffff;
+}
+
+.eventos-orcamento-intro small {
+    display: block;
+    margin-top: 16px;
+    color: #786b60;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* FORMULÁRIO */
+
+.eventos-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+
+    padding: 32px;
+    border: 1px solid #e8dbcd;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 35px rgba(48, 31, 20, 0.06);
+}
+
+.eventos-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.eventos-campo label {
+    color: var(--preto);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.eventos-campo input,
+.eventos-campo select,
+.eventos-campo textarea {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d9cbbd;
+    border-radius: 6px;
+    background-color: #fffdfb;
+    color: var(--preto);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.eventos-campo input,
+.eventos-campo select {
+    min-height: 46px;
+}
+
+.eventos-campo textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.eventos-campo input:focus,
+.eventos-campo select:focus,
+.eventos-campo textarea:focus {
+    outline: 2px solid var(--dourado);
+    outline-offset: 2px;
+}
+
+.eventos-campo-completo {
+    grid-column: 1 / -1;
+}
+
+.eventos-botao-enviar {
+    grid-column: 1 / -1;
+    width: 100%;
+    font-family: inherit;
+}
+
+.eventos-aviso {
+    grid-column: 1 / -1;
+    margin: -5px 0 0;
+    color: #786b60;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* RODAPÉ DA PÁGINA */
+
+.eventos-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    padding: 40px 20px 25px;
+    border-top: 1px solid #e7ddd2;
+    background-color: #f8f2eb;
+    text-align: center;
+}
+
+.eventos-rodape-logo img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.eventos-rodape p {
+    margin-bottom: 0;
+    color: #65584e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.eventos-rodape > a:not(.eventos-rodape-logo) {
+    color: var(--terracota);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.eventos-rodape > a:not(.eventos-rodape-logo):hover {
+    text-decoration: underline;
+}
+
+.eventos-rodape .eventos-copyright {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    .eventos-hero {
+        gap: 35px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .eventos-hero-imagem {
+        height: 390px;
+    }
+
+    .eventos-categorias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .eventos-diferenciais {
+        gap: 40px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .eventos-orcamento {
+        gap: 35px;
+    }
+
+    .eventos-formulario {
+        padding: 24px;
+    }
+}
+
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+    .eventos-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 45px 6%;
+    }
+
+    .eventos-hero-texto {
         text-align: center;
     }
 
+    .eventos-hero-texto p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .eventos-link {
+        display: block;
+        margin: 18px 0 0;
+    }
+
+    .eventos-hero-imagem {
+        height: 330px;
+        border-radius: 140px 140px 10px 10px;
+    }
+
+    .eventos-introducao {
+        padding: 45px 6% 30px;
+    }
+
+    .eventos-categorias {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px 6% 60px;
+    }
+
+    .evento-card-imagem {
+        height: 260px;
+    }
+
+    .evento-card-conteudo p {
+        min-height: 0;
+    }
+
+    .eventos-diferenciais {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 7%;
+    }
+
+    .eventos-orcamento {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 60px 6%;
+    }
+
+    .eventos-formulario {
+        grid-template-columns: 1fr;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .eventos-campo-completo,
+    .eventos-botao-enviar,
+    .eventos-aviso {
+        grid-column: auto;
+    }
 }
